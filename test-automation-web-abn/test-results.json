@@ -1,0 +1,240 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\playwright.config.ts",
+    "rootDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "c:/Users/Gebruiker/abn-playwright-framework/test-automation-abn-amro/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.39.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Home.test.spec.ts",
+      "file": "Home.test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Feature @home",
+          "file": "Home.test.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC07:Positive: Home Page - Expected titles Home Product Contact and Signout",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 2129,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-03T14:05:34.972Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef423ac612965e7572bb-c67a6480267a2ff1b7de",
+              "file": "Home.test.spec.ts",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "TC08:Negative: Home Page - UnExpected and missing one title",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 6915,
+                      "error": {
+                        "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByText('Home Products Contact Sign Out')\n\u001b[32m- Expected string  -  1\u001b[39m\n\u001b[31m+ Received string  + 24\u001b[39m\n\n\u001b[32m- Home Products Contact\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Home\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Products\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Contact\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+                     Sign Out\u001b[39m\n\u001b[31m+ \u001b[43m                        \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m        \u001b[49m\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Home Products Contact Sign Out')\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n",
+                        "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByText('Home Products Contact Sign Out')\n\u001b[32m- Expected string  -  1\u001b[39m\n\u001b[31m+ Received string  + 24\u001b[39m\n\n\u001b[32m- Home Products Contact\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Home\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Products\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Contact\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+                     Sign Out\u001b[39m\n\u001b[31m+ \u001b[43m                        \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m        \u001b[49m\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Home Products Contact Sign Out')\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\n    at c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts:39:72",
+                        "location": {
+                          "file": "c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts",
+                          "column": 72,
+                          "line": 39
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m          \u001b[90m//Assertions\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Home'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Home'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Home Products Contact Sign Out'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Home Products Contact'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m           \u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m     test(\u001b[32m\"TC09:Positive: Home Page - Click on User Icon & Click on Logout\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts",
+                            "column": 72,
+                            "line": 39
+                          },
+                          "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: getByText('Home Products Contact Sign Out')\n\u001b[32m- Expected string  -  1\u001b[39m\n\u001b[31m+ Received string  + 24\u001b[39m\n\n\u001b[32m- Home Products Contact\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Home\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Products\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+                     Contact\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+                     Sign Out\u001b[39m\n\u001b[31m+ \u001b[43m                        \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                    \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m                \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m            \u001b[49m\u001b[39m\n\u001b[31m+ \u001b[43m        \u001b[49m\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Home Products Contact Sign Out')\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\u001b[2m  -   locator resolved to <nav id=\"navigation\" class=\"navigation\">…</nav>\u001b[22m\n\u001b[2m  -   unexpected value \"\u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Home\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Products\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                    Contact\u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m                    Sign Out\u001b[22m\n\u001b[2m                        \u001b[22m\n\u001b[2m                    \u001b[22m\n\u001b[2m                \u001b[22m\n\u001b[2m            \u001b[22m\n\u001b[2m        \"\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m          \u001b[90m//Assertions\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Home'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Home'\u001b[39m)\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Home Products Contact Sign Out'\u001b[39m))\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Home Products Contact'\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m           \u001b[0m\n\u001b[0m \u001b[90m 41 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 42 |\u001b[39m     test(\u001b[32m\"TC09:Positive: Home Page - Click on User Icon & Click on Logout\"\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\n\u001b[2m    at c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts:39:72\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-03T14:05:35.094Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts",
+                        "column": 72,
+                        "line": 39
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ef423ac612965e7572bb-27b4327c8c1362fa53ba",
+              "file": "Home.test.spec.ts",
+              "line": 36,
+              "column": 9
+            },
+            {
+              "title": "TC09:Positive: Home Page - Click on User Icon & Click on Logout",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 60011,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts",
+                            "column": 40,
+                            "line": 45
+                          },
+                          "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for locator('i').nth(3)\n  locator resolved to <i aria-hidden=\"true\" class=\"fas fa-user-circle\"></i>\nattempting click action\n  waiting for element to be visible, enabled and stable\n    element is not visible - waiting...\n============================================================\n\n\u001b[0m \u001b[90m 43 |\u001b[39m         \u001b[90m//Assertions\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 44 |\u001b[39m         \u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m         \u001b[90m//await page.locator('i').nth(3).click();\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 46 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Sign Out'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 47 |\u001b[39m         expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Automation doesn\\'t stop at testing, it\\'s just a beginning!'\u001b[39m }))\u001b[0m\n\u001b[0m \u001b[90m 48 |\u001b[39m\u001b[0m\n\n\u001b[2m    at c:\\Users\\Gebruiker\\abn-playwright-framework\\test-automation-abn-amro\\tests\\Home.test.spec.ts:45:40\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-12-03T14:05:39.705Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ef423ac612965e7572bb-a20b8d1848f8c2dda123",
+              "file": "Home.test.spec.ts",
+              "line": 42,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2023-12-03T14:05:32.931Z",
+    "duration": 66940.722
+  }
+}

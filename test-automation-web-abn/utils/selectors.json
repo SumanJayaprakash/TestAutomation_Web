@@ -1,0 +1,15 @@
+{
+     "LoginPage": {
+        "usernameInput": "input[data-test='username']",
+        "passwordInput": "input[data-test='password']",
+        "loginButton": "input[data-test='login-button']",
+        "errorMessage": "h3[data-test='error']"
+    },
+    "HomePage": {
+        "pageTittle": ".title",
+        "cartQuantityBadge": ".cart_quantity",
+        "itemName": ".inventory_item_name",
+        "itemPrice": ".inventory_item_price",
+        "cartBadge": ".shopping_cart_badge"
+    }
+}
